@@ -20,17 +20,17 @@
 
     <!-- add some images to click on and play audio -->
     <section id="album-art">
-      <img src="images/albatroz.jpeg" alt="album art" class="track-ref">
-      <img src="images/stp.jpeg" alt="album art" class="track-ref">
-      <img src="images/wmm.jpeg" alt="album art" class="track-ref">
+      <img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="Albatroz album art" class="track-ref">
+      <img data-trackref="STP_ILS" src="images/stp.jpeg" alt="STP_ILS album art" class="track-ref">
+      <img data-trackref="Companion" src="images/wmm.jpeg" alt="Companion album art" class="track-ref">
     </section>
 
     <section class="audio-controls">
-      <button>PLAY</button>
-      <button>STOP</button>
-      <button>REWIND</button>
+      <button id="playBtn">PLAY</button>
+      <button id="pauseBtn">PAUSE</button>
+      <button id="rewindBtn">REWIND</button>
 
-      <input id="volume-control" type="range" min="0" max="100" step="1"></input>
+      <input id="volumeControl" type="range" min="0" max="100" step="1"></input>
 
     </section>
   </main>
