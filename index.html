@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/main.css">
-    
-    <title>.: Working with Audio :.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Virutal Jukebox</title>
 </head>
 <body>
-    <main>
-        <header>
-            <h1 class="hidden"></h1>
-            <h2>My Super Awesome Audio Player</h2>
-        </header>
-        <!-- audio and custom controls go here -->
-        <section class="audio">
-            <audio src="audio/Albatroz.mp3"></audio>
+  <h1 class="hidden">My Audio Example</h1>
+  <h2>My Audio Example</h2>
+  <main>
+    <h2 class="hidden">Audio Tracks</h2>
+    <!-- add audio element here -->
 
-            <!-- now add some images for each audio selection -->
-            <div>
-                <img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="Chupa" class="placeholder">
-            </div>
-            <div>
-                <img data-trackref="Companion" src="images/stp.jpeg" alt="Stone Temple Pilots" class="placeholder">
-            </div>
-            <div>
-                <img data-trackref="STP_ILS" src="images/wmm.jpeg" alt="Wide Mouth Mason" class="placeholder">
-            </div>
-            
-            <section class="controls">
-                <button id="pauseButton">Pause</button>
-                <button id="rewindButton">Rewind</button>
-                <button id="playButton">Play</button>
-            </section>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+    <!-- add some images to click on and play audio -->
+    <img src="images/albatroz.jpeg" alt="album art" class="track-ref">
+    <img src="images/stp.jpeg" alt="album art" class="track-ref">
+    <img src="images/wmm.jpeg" alt="album art" class="track-ref">
+
+    <section class="audio-controls">
+      <button>PLAY</button>
+      <button>STOP</button>
+      <button>REWIND</button>
+
+      <input id="volume-control" type="range" min="0" max="100" step="1"></input>
+
+    </section>
+  </main>
+  <script src="js/main.js"></script>
 </body>
 </html>
