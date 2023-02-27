@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>.: Working with Audio :.</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="hidden"></h1>
+            <h2>My Super Awesome Audio Player</h2>
+        </header>
+        <!-- audio and custom controls go here -->
+        <section class="audio">
+            <audio src="audio/Albatroz.mp3"></audio>
+
+            <!-- now add some images for each audio selection -->
+            <div>
+                <img data-trackref="Albatroz" src="images/albatroz.jpeg" alt="Chupa" class="placeholder">
+            </div>
+            <div>
+                <img data-trackref="Companion" src="images/stp.jpeg" alt="Stone Temple Pilots" class="placeholder">
+            </div>
+            <div>
+                <img data-trackref="STP_ILS" src="images/wmm.jpeg" alt="Wide Mouth Mason" class="placeholder">
+            </div>
+            
+            <section class="controls">
+                <button id="pauseButton">Pause</button>
+                <button id="rewindButton">Rewind</button>
+                <button id="playButton">Play</button>
+            </section>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

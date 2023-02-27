@@ -1,0 +1,28 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+body { font-size: 16px; }
+
+.audio div {
+    display: inline-block;
+    padding: 0 1.5em;
+}
+
+.audio img { cursor: pointer; }
+
+.controls { margin-top: 1.5em; }
+
+.controls button { 
+    padding: 8px 14px;
+    border-radius: 0.5em;
+    background-color: blue;
+    color: white;
+    margin: 0 1em; 
+    cursor: pointer;
+    font-size: 1.5em; 
+}
